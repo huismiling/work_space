@@ -1,0 +1,11 @@
+
+alias a=alias
+
+a lt='ls -lt'
+a rf='rm -f'
+a g=gvim
+a rd='rm -rf'
+a md='mkdir'
+a h=history
+
+unalias a
