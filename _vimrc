@@ -31,6 +31,7 @@ let g:syntastic_python_checkers = ['pylint']
 
 " user define
 colorscheme desert
+colorscheme solarized
 
 syntax on
 
