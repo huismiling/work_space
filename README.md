@@ -1,6 +1,7 @@
 # work_space
 
 ## vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 >plugin install cmd:  
 >1.open vim  
 >2.cmd :PluginInstall  
