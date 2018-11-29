@@ -3,6 +3,8 @@ FROM nvidia/cuda:8.0-cudnn7-devel-ubuntu14.04
 RUN echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" > /etc/apt/sources.list.d/nvidia-ml.list
 
 RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+RUN apt-get update && apt install -y --no-install-recommends software-properties-common 
+RUN add-apt-repository ppa:jonathonf/vim && apt update
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
@@ -21,6 +23,7 @@ RUN wget --quiet https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
     rm ~/anaconda.sh && \
     echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc
+ENV PATH="/opt/conda/bin:${PATH}"
 
 RUN /opt/conda/bin/conda install -c conda-forge xorg-libxrender xorg-libxext libiconv xorg-libxau
 RUN /opt/conda/bin/conda install -c mw gtk2
@@ -48,7 +51,6 @@ RUN mkdir ~/work/huismiling -p && \
 RUN export PATH=/opt/conda/bin:$PATH
 
 RUN vim +PluginInstall +qall
-ENV PATH="/opt/conda/bin:${PATH}"
 RUN cd ~/.vim/bundle/YouCompleteMe && \
     /opt/conda/bin/python install.py
 
