@@ -1,10 +1,13 @@
 # work_space
 
+## install vim8
+>sudo add-apt-repository ppa:jonathonf/vim  
+>sudo apt update  
+>sudo apt install vim  
+
 ## vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
->plugin install cmd:  
->1.open vim  
->2.cmd :PluginInstall  
+install from command line: vim +PluginInstall +qall  
 
 ## Link cmd
 >rm -f .vimrc .tmux.conf .bash_aliases .gitconfig .inputrc  
