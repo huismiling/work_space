@@ -1,6 +1,8 @@
 set nocompatible              " required
 filetype off                  " required
 
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set encoding=utf-8
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -61,7 +63,6 @@ set foldlevel=9
 
 set cursorline
 
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
 
 set tabpagemax=66
