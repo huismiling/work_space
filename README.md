@@ -6,7 +6,7 @@
 >sudo apt install vim  
 
 ## vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
 install from command line: vim +PluginInstall +qall  
 
 ## Link cmd
