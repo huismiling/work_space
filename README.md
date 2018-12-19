@@ -6,8 +6,15 @@
 >sudo apt install vim  
 
 ## vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
-install from command line: vim +PluginInstall +qall  
+>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
+>
+>命令行直接安装 `vim +PluginInstall +qall`
+>
+>或者：
+>
+>plugin install cmd:  
+>1.open vim  
+>2.cmd :PluginInstall  
 
 ## Link cmd
 >rm -f .vimrc .tmux.conf .bash_aliases .gitconfig .inputrc  
