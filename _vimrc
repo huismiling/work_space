@@ -63,6 +63,7 @@ set foldlevel=9
 
 set cursorline
 
+set autochdir
 
 
 set tabpagemax=66
