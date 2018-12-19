@@ -75,9 +75,6 @@ map tn :tabnext<cr>
 map tp :tabprev<cr>
 
 
-
-
-
 autocmd BufNewFile *.c,*.cpp,*.sh,*.py,*.java exec ":call SetTitle()"                                                                                       
 "定义函数SetTitle，自动插入文件头
 func SetTitle()
