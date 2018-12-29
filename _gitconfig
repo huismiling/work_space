@@ -8,7 +8,7 @@
     ci = commit
     co = checkout
 [lfs]
-	url = http://matrix:matrix@192.168.2.119:9999
+	url = http://matrix:matrix@192.168.2.21:9999
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
