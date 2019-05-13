@@ -24,6 +24,16 @@ filetype plugin indent on    " required
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'       "配置全局路径
 let g:ycm_confirm_extra_conf=0   "每次直接加载该文件，不提示是否要加载
+let g:ycm_filetype_whitelist = { 
+ \ "c":1,
+ \ "cpp":1, 
+ \ "objc":1,
+ 
+ \ "sh":1,
+ \ "zsh":1,
+ \ "zimbu":1,
+ \ }
+
 
 " python pylint
 let g:syntastic_python_checkers = ['pylint']
