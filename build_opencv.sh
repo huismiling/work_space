@@ -1,4 +1,7 @@
 cmake \
+-D BUILD_NEW_PYTHON_SUPPORT=ON \
+-D BUILD_opencv_python3=ON \
+-D HAVE_opencv_python3=ON \
 -DPYTHON_DEFAULT_EXECUTABLE=$(which python3) \
 -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_EXAMPLES=OFF \
