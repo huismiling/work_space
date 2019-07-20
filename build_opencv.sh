@@ -5,6 +5,7 @@ cmake \
 -D BUILD_PERF_TESTS=OFF \
 -D BUILD_DOCS=OFF \
 -D BUILD_TESTS=OFF \
+-D BUILD_opencv_cudacodec=OFF \
 -D WITH_NVCUVID=ON \
 -D WITH_CUDA=ON \
 -D WITH_GTK_2_X=ON \
