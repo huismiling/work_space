@@ -5,6 +5,7 @@ cp work_space/_tmux.conf .tmux.conf
 cp work_space/_bash_aliases .bash_aliases  
 cp work_space/_gitconfig .gitconfig  
 cp work_space/_inputrc  .inputrc  
+cp work_space/_pip .pip -r
 
 cd -
 
