@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 
 RUN echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" > /etc/apt/sources.list.d/nvidia-ml.list
 
@@ -15,16 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
         libjpeg-dev \
         libpng-dev
-
-
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==0.3.1
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torchvision==0.2.1
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX
-
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mxnet-cu80
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple easydict
-#RUN /opt/conda/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cmake
 
 RUN apt install -y openssh-client openssh-server
 RUN git clone https://github.com/huismiling/work_space.git ~/work_space && \
