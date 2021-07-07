@@ -1,0 +1,5 @@
+{
+    "registry-mirrors": ["https://ky606fax.mirror.aliyuncs.com"],
+    "default-shm-size": "4G"
+}
+
