@@ -7,5 +7,8 @@ a g=gvim
 a rd='rm -rf'
 a md='mkdir'
 a h=history
+a ll='ls -alF'
+a la='ls -A'
+a l='ls -CF'
 
 unalias a
