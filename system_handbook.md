@@ -12,3 +12,10 @@ nmcli con show
 nmcli con down ssid/uuid
 nmcli con up ssid/uuid
 ```
+
+## sleep suspend
+关闭、使能自动sleep和suspend。
+```
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
