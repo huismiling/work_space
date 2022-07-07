@@ -19,3 +19,15 @@ nmcli con up ssid/uuid
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+
+## git usage
+
+推送repo到新的仓库。
+```
+git remote rename origin old-origin
+git remote add origin new_git_url
+git push -u origin --all
+git push -u origin --tags
+
+```
+
