@@ -1,7 +1,3 @@
-[user]
-	email = xiaozhang@123.com
-	name = xiaozhang
-
 [alias]
     br = branch
     st = status
